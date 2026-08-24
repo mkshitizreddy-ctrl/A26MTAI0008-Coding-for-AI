@@ -1,0 +1,12 @@
+Welcome to your AI Climate Assistant.
+What is the current temperature in Celsius? AI Alert: It's hot! AI suggests turning on the AC.
+Is it raining outside? (yes/no) 
+---
+Welcome to your AI Climate Assistant.
+What is the current temperature in Celsius? AI Alert: Chilly! AI suggests a jacket.
+Is it raining outside? (yes/no) AI Recommendation: Stay indoors today, and carry an umbrella.
+
+---
+Welcome to your AI Climate Assistant.
+What is the current temperature in Celsius? AI Analysis: Temperature is optimal. Enjoy your day!
+Is it raining outside? (yes/no) 

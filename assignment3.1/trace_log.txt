@@ -1,0 +1,9 @@
+--- Auditing Batch 0: [22.5, 23.0, 22.8] ---
+--- Auditing Batch 1: [25.1, 'ERR', 24.9] ---
+Noise ignored at Batch 1 (ERR).
+--- Auditing Batch 2: [30.2, 35.5, 40.1] ---
+Anomaly Detected at Batch 2: 35.5
+Spike Detected at Batch 2: 30.2 -> 35.5 (Delta 5.3)
+Anomaly Detected at Batch 2: 40.1
+--- Auditing Batch 3: [22.0, 22.1, 'STOP'] ---
+Emergency Shutdown at Batch 3.

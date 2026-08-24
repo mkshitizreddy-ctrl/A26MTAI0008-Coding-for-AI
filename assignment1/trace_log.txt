@@ -1,0 +1,11 @@
+Enter your full name: Identifier Byte-Count: 12
+Formatted Name: Scoooby-Dooo
+Enter your current age: Current Year: 2026
+Projected Age in 2045: 39
+AI Era Readiness Score: 79.50
+Bonus - Repeated Name (2x): Scoooby-DoooScoooby-Dooo
+
+---
+Enter your full name: Identifier Byte-Count: 13
+Formatted Name: Kshitiz Reddy
+Enter your current age: Input Error: Age must be a valid non-negative whole number.

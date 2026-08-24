@@ -1,0 +1,12 @@
+Validation passed. Processing packet...
+Initial packet: [5, 12, 0, 8, 21, 34, 7, 19, 0, 3]
+--- Stage 2: Middle-Out Swap ---
+Scrambled: [3, 0, 19, 7, 34, 5, 12, 0, 8, 21]
+Non-destructive check, id(packet) == id(front_half): False
+--- Stage 3: In-Place Correction ---
+After Sync-Bit insertion: [3, 0, 19, 7, 34, 5, 'SYNC-BIT', 12, 0, 8, 21]
+After zero removal: [3, 19, 7, 34, 5, 'SYNC-BIT', 12, 8, 21]
+--- Stage 4: Memory Integrity Check ---
+Original packet: [5, 12, 0, 8, 21, 34, 7, 19, 0, 3]
+Final scrambled: [3, 19, 7, 34, 5, 'SYNC-BIT', 12, 8, 21]
+Header: 3 Footer: 21 Body length: 7

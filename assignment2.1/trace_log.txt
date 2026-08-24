@@ -1,0 +1,23 @@
+--- Scenario (a): Empty input handled by walrus check ---
+Temperature (C): 
+Safety Level: Unknown
+
+--- Scenario (b): Critical heatwave reading ---
+Temperature (C): 32
+Humidity (%): 80
+HSI: 72.0
+Safety Level: CRITICAL
+Risk Label: Unsafe
+
+--- Scenario (c): Cautionary reading adjusted by Battery-Level bonus ---
+Temperature (C): 25
+Humidity (%): 20
+Wind speed (km/h): 3
+Battery level (%): 10
+HSI: 35.0
+Safety Level: CRITICAL
+Risk Label: Unsafe
+
+Note: primary tier for (25, 20, wind 3) is CAUTIONARY (30 <= HSI <= 45,
+wind < 5). Battery level 10 is below the 20% threshold, so the Nested
+Intelligence Suite elevates it to CRITICAL.
