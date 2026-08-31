@@ -1,15 +1,13 @@
 """
 Program: Climatic Risk Intelligence Module
 Purpose: Classifies a work-site into a safety tier (Freeze Alert, Critical,
-         Cautionary, Operational) from a derived Heat Stress Index, using
-         the walrus operator for input capture and short-circuit logic.
+         Cautionary, Operational) from a derived Heat Stress Index.
 Author: Kshitiz
 
-Heuristic Tiering Model: HSI = Temperature + (0.5 * Humidity). Freeze
-Alert is checked first regardless of HSI, since a high-humidity freezing
-site can still produce a numerically large HSI. Critical and Cautionary
-are checked next in that order; Operational is the catch-all else, which
-avoids an unnecessary explicit lower-bound condition.
+HSI = Temperature + (0.5 * Humidity). Freeze Alert is checked first
+regardless of HSI, since a freezing site with high humidity can still
+give a large HSI. Critical and Cautionary come next in that order, and
+Operational is just the else case.
 """
 
 if (temp_str := input("Temperature (C): ").strip()):
@@ -46,7 +44,7 @@ else:
         else:
             tier = "OPERATIONAL"
 
-        # Challenge Task: Nested Intelligence Suite (battery adjustment)
+        # Bonus: adjust Cautionary tier based on battery level
         if tier == "CAUTIONARY":
             battery_str = input("Battery level (%): ").strip()
             battery = float(battery_str) if battery_str else 100.0

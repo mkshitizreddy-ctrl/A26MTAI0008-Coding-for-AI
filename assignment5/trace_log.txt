@@ -1,0 +1,16 @@
+Evaluating Batch 0 (ID: 201)...
+Signal IGNORE encountered at Batch 201.
+Batch 1 is EMPTY. Proceeding.
+Evaluating Batch 2 (ID: 202)...
+Signal FAULT detected. Suppressing batch 202.
+Evaluating Batch 3 (ID: 203)...
+Evaluating Batch 4 (ID: 204)...
+Signal HALT detected. Executing emergency protocol.
+
+========================================
+CALIBRATION COMPLETE: EMERGENCY TERMINATION
+========================================
+Total Valid Readings Processed: 9
+Global Calibration Checksum: 36.2
+Maximum Reading Encountered: 14.0
+Minimum Reading Encountered: 3.5

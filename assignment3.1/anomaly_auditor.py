@@ -1,10 +1,6 @@
-# Logic Trace: A Python for-loop is bounded by len() of the sequence it
-# iterates over. When a batch is [], range(len(batch)) - or iterating the
-# batch directly - has zero elements to step through, so the loop body
-# never executes and control falls straight through to the next line.
-# There is no manual counter or condition to get stuck on, unlike a
-# C-style loop, so an empty batch simply does nothing and the audit moves
-# on to the next batch.
+# Logic Trace: a for-loop is bounded by the length of what it iterates
+# over. If a batch is [], there's nothing to loop through, so the body
+# just never runs and we move to the next batch. No way for it to hang.
 #
 # Author: Kshitiz
 
@@ -50,14 +46,9 @@ for batch_id in range(len(telemetry_stream)):
 else:
     print("Audit Complete: No system-wide failures")
 
-# Submission Documentation:
-# shutdown_triggered starts False and is only ever set True inside the
-# inner loop, when a "STOP" reading is found. The inner loop's break just
-# exits that batch's reading loop, so straight after it I check the flag
-# and break the outer batch loop too, which is what actually stops the
-# whole audit early. Because the outer for-loop's else clause only runs
-# when the loop finishes without break, and the outer loop is only broken
-# when shutdown_triggered is True, the else block prints "Audit Complete"
-# in every run except the one where STOP was actually seen. If STOP never
-# appears, shutdown_triggered stays False, the outer loop is never broken,
-# and the else fires normally at the end.
+# Submission Note: shutdown_triggered starts False and only gets set to
+# True when "STOP" shows up. break only exits the inner loop, so right
+# after it I check the flag and break the outer loop too - that's what
+# actually stops the audit. The outer else only runs if the outer loop
+# wasn't broken, so it correctly skips "Audit Complete" whenever STOP
+# was seen, and prints it normally otherwise.

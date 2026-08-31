@@ -1,8 +1,7 @@
 """
 Program: Multi-Dimensional Packet Scrambler
-Purpose: Runs a data packet through a four-stage pipeline (middle-out
-         slice swap, in-place correction, memory integrity check) using
-         only built-in list operations, no external libraries.
+Purpose: Runs a data packet through a four-stage pipeline using only
+         built-in list operations, no external libraries.
 Author: Kshitiz
 """
 
@@ -47,20 +46,15 @@ print(f"Final scrambled: {scrambled}")
 first, *middle, last = scrambled
 print(f"Header: {first} Footer: {last} Body length: {len(middle)}")
 
-# Submission Documentation:
-# Stage 4 reprints the original packet variable, untouched since Stage 1,
-# next to the final scrambled list. front_half, back_half, and scrambled
-# were all built through slicing or concatenation, never through direct
-# reference assignment, so none of them alias packet's underlying list.
-# The id() check in Stage 2 confirms this: slicing always returns a new
-# list object. Because every later mutation (insert, remove) runs only
-# on scrambled, and scrambled was never the same object as packet,
-# packet's contents at Stage 4 are guaranteed to match Stage 1 exactly.
+# Note: front_half, back_half, and scrambled are all built through
+# slicing/concatenation, never direct assignment, so none of them alias
+# packet. The id() check above confirms slicing returns a new list.
+# Since Stage 3's mutations only run on scrambled, packet stays exactly
+# as it was at Stage 1.
 
 
 def scramble(data):
-    """Stretch goal: same pipeline, returns the result instead of
-    printing it."""
+    """Stretch goal - same pipeline, returns result instead of printing."""
     mid = len(data) // 2
     front, back = data[:mid], data[mid:]
     result = back[::-1] + front

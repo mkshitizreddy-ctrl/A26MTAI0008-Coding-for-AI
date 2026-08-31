@@ -1,8 +1,6 @@
 """
 Program: Temporal Profile Analyzer
-Purpose: Computes an AI Era Readiness Score from user metadata (full name
-         and current age), using string processing, explicit type
-         conversion, and the datetime module for the current year.
+Purpose: Computes an AI Era Readiness Score from a name and age.
 Author: Kshitiz
 """
 
@@ -37,11 +35,8 @@ else:
         score = ((name_length * 10) + age_in_2045) / 2
         print(f"AI Era Readiness Score: {score:.2f}")
 
-        # --- Challenge Task (Bonus): Name Repetition ---
-        # For a two-digit age, age // 10 isolates the leading (tens) digit.
-        # For a single-digit age there is no tens digit, so age // 10 would
-        # silently evaluate to 0 and produce an empty string. In that case
-        # we treat the age itself as the repeat count instead.
+        # Bonus: repeat name by age's leading digit.
+        # age // 10 gives 0 for single-digit ages, so just use age then.
         if current_age >= 10:
             repeat_count = current_age // 10
         else:
