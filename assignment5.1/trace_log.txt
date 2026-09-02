@@ -1,0 +1,19 @@
+--- Common Intelligence Across All Agents ---
+{'comm_protocol', 'grid_map'}
+
+--- Relocating Agent_Alpha ---
+Attempting direct mutation of Agent_Alpha's Location tuple...
+TypeError caught: 'tuple' object does not support item assignment
+Tuples are immutable; reassigning a new tuple instead.
+Agent_Alpha new state: {'Location': (12, 22), 'Knowledge': {'comm_protocol', 'grid_map', 'telemetry_sync'}}
+Movement Log: {'Agent_Alpha': [(12, 22)]}
+
+--- Relocating Agent_Alpha again ---
+Attempting direct mutation of Agent_Alpha's Location tuple...
+TypeError caught: 'tuple' object does not support item assignment
+Tuples are immutable; reassigning a new tuple instead.
+Agent_Alpha new state: {'Location': (14, 25), 'Knowledge': {'comm_protocol', 'grid_map', 'telemetry_sync'}}
+Movement Log: {'Agent_Alpha': [(12, 22), (14, 25)]}
+
+--- Summary Report (Dictionary Comprehension) ---
+{'Agent_Alpha': 3, 'Agent_Beta': 3, 'Agent_Gamma': 4}
