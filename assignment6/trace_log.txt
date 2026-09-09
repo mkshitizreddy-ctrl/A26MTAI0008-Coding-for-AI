@@ -1,0 +1,22 @@
+--- Task 1: search4letters ---
+Positional: {'C', 'G'}
+Keyword: {'C', 'G'}
+Default markers: {'T', 'C', 'G', 'A'}
+
+--- Task 2: Mutation Demo ---
+Global Scope (Before) - ID: 140606902555264 | Data: ['AATCCG', 'TGGCTA']
+Inside Function (Start) - ID: 140606902555264 | Data: ['AATCCG', 'TGGCTA']
+Inside Function (End) - ID: 140606902555264 | Data: ['AATCCG', 'TGGCTA', 'CGAT']
+Global Scope (After) - ID: 140606902555264 | Data: ['AATCCG', 'TGGCTA', 'CGAT']
+
+--- Slice Experiment ---
+Global Scope (Before) - ID: 140606900748224 | Data: ['AATCCG', 'TGGCTA']
+Inside Function (Start) - ID: 140606902555264 | Data: ['AATCCG', 'TGGCTA']
+Inside Function (End) - ID: 140606902555264 | Data: ['AATCCG', 'TGGCTA', 'CGAT']
+Global Scope (After) - ID: 140606900748224 | Data: ['AATCCG', 'TGGCTA']
+
+--- Bonus: Rebind Experiment ---
+Global Scope (Before) - ID: 140606902555264 | Data: ['AATCCG', 'TGGCTA']
+Inside (Start) - ID: 140606902555264
+Inside (End) - ID: 140606900677952 | Data: ['AATCCG', 'TGGCTA', 'CGAT']
+Global Scope (After) - ID: 140606902555264 | Data: ['AATCCG', 'TGGCTA']
