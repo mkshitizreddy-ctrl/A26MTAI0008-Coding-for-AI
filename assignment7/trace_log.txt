@@ -1,0 +1,7 @@
+Test 1 -> 501 [14.5, 15.0, 13.8]
+Test 1 side-effect assertions passed.
+Test 2 -> 502 [9.0, 8.5]
+Test 2 side-effect assertions passed.
+Test 3 (default offset) -> 503 [1.0, 2.0]
+Test 4 passed. TypeError raised as expected: parse_payload() got some positional-only arguments passed as keyword arguments: 'raw_packet, delimiter'
+Test 5 passed. TypeError raised as expected: parse_payload() takes 2 positional arguments but 3 were given
