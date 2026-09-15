@@ -1,47 +1,46 @@
 # Coding for AI
 
-**Student:** Kshitiz Reddy  
-**Registration No.:** A26MTAI0008  
-**Repository:** Coding for AI coursework
+This is my coursework repository for **Coding for AI** at Bennett University.
 
-## About
+I’m using this repo to keep my assignments, Python programs, outputs, and supporting files together as I work through the course.
 
-This repository contains coursework, assignments, and practical implementations completed for the **Coding for AI** course.
+**Kshitiz Reddy** · A26MTAI0008  
+M.Tech Artificial Intelligence · Bennett University
 
-The goal of the repository is to maintain a clear record of programming exercises and demonstrate practical Python skills developed throughout the course.
+## What’s here
 
-## Repository Contents
+The assignment folders below follow the numbering used in the course submissions. I’ve kept the original numbering rather than renaming folders just to make the structure look different.
 
-The repository is organized by assignment and practical number. Existing assignment folders are preserved as submitted coursework.
-
-### Assignments
-
-| Assignment | Status |
+| Assignment | What it contains |
 |---|---|
-| Assignment 1 | Completed / submitted work |
-| Assignment 2 | Completed / submitted work |
-| Assignment 2.1 | Completed / submitted work |
-| Assignment 3 | Completed / submitted work |
-| Assignment 3.1 | Completed / submitted work |
-| Assignment 5 | Completed / submitted work |
-| Assignment 5.1 | Completed / submitted work |
-| Assignment 5.2 | Completed / submitted work |
-| Assignment 6 | Completed / submitted work |
-| Assignment 7 | Completed / submitted work |
+| Assignment 1 | Python coursework and supporting files |
+| Assignment 2 | Python coursework and supporting files |
+| Assignment 2.1 | Python coursework and supporting files |
+| Assignment 3 | Python coursework and supporting files |
+| Assignment 3.1 | Python coursework and supporting files |
+| Assignment 5 | Python coursework and supporting files |
+| Assignment 5.1 | Python coursework and supporting files |
+| Assignment 5.2 | Python coursework and supporting files |
+| Assignment 6 | Coursework submission |
+| Assignment 7 | Coursework submission |
 
-> Assignment numbering is retained to match the original course submissions.
+Some folders include the problem statement, source code, output screenshots, or trace files depending on what was required for that assignment.
 
-## Technologies
+## Tools and topics
 
-- Python
-- Core programming and problem solving
+Most of the work in this repository is written in **Python**, with a focus on:
+
+- Programming fundamentals and problem solving
 - Functions and control flow
 - Data structures
-- File handling and practical scripting, where applicable
+- File handling and practical scripting
+- Writing and testing small Python programs
 
-## Purpose
+## A note on the structure
 
-This repository serves as an academic record of Coding for AI coursework and provides a single place to review the implementations submitted during the course.
+This is a coursework repo, so the aim is to keep the submitted work easy to find and review. The assignment names and numbering are intentionally kept close to the original course submissions.
+
+The **Memory Heist** team project is maintained in its own repository and is not part of this coursework repository.
 
 ## Author
 
